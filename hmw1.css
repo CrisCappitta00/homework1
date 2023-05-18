@@ -2,7 +2,7 @@ body{
     background-color: cornflowerblue;
     margin: 8px;
     border: 2px solid;
-    padding-top: 20px;
+    padding: 10px;
     font-family: 'Times New Roman', Times, serif;
     color: black;
     font-style: oblique;
@@ -11,8 +11,12 @@ header{
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-    flex-direction: column;
+    flex-direction: row;
     position: relative;
-    height: 600px;
+    height: 100%;
     max-width: 100%;
+}
+img{
+    max-width: 100%;
+    height: auto;
 }

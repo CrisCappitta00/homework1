@@ -9,17 +9,10 @@
 <body>
     <!--Creazione Menù nella parte superiore-->
     <header>
-        <div id="Logo">
+        <div>
             <img src="Logo.png">
         </div>
-        <div id="Menu">
-            <a class="Navigation" href="#">Home</a>
-            <a class="Navigation" href="#">Blog</a>
-            <a class="Navigation" href="#">Categoria</a>
-            <a class="Navigation" href="#">Carrello</a>
-            <a class="Navigation" href="#">Contacts</a>
-            <a class="Navigation" href="#">Avvisi</a>
-        </div>
+        
     </header>
 </body>
 </html>
