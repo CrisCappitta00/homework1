@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css"  href="inde.css">
     <title>Schermata iniziale</title>
 </head>
 <body>
+    <!--Creazione schermata login-->
     <header>
         <h1>Benvenuto su Mondo Anime</h1>
         <p>

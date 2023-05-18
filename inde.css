@@ -1,0 +1,22 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    color:black;
+    font-style: oblique;
+    background-color: white;
+    letter-spacing: 2px;
+    margin: 10px;
+    border: 10px;
+    padding-top: 25px;
+}
+header{
+    display: flex;
+    background-image: url(Anime.png);
+    background-size: cover;
+    background-position: center;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    position: relative;
+    height: 600px;
+    max-width: 100%;
+}
