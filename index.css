@@ -2,15 +2,15 @@ body{
     font-family: 'Times New Roman', Times, serif;
     color:black;
     font-style: oblique;
-    
+    background-image: url(backgroungcolorato.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     letter-spacing: 2px;
     margin: 10px;
     border: 2px solid;
 }
 header{
-    
-    background-size: cover;
-    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
