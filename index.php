@@ -10,7 +10,7 @@
    
     <!--Creazione schermata login-->
     <header>
-        <h1>Benvenuto su Mondo Anime</h1>
+        <h1>World Anime</h1>
         <img src="Anime.png" alt="Raffigura gli anime"></img>
         <p>
          In questo sito puoi trovare tutto ciò che riguarda gli anime: 
