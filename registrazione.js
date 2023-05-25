@@ -1,6 +1,7 @@
 /*Salvo all'interno di una variabile un riferimento al mio form */
-const my_form = document.forms['form_login'];
+const my_form = document.forms['form_reg'];
 console.log(my_form);
+
 /*Creo un event listener che partirà ogni qualvolta si preme invio e i campi non sono stati riempiti e richiamerà la funzione controlla dati*/
 my_form.addEventListener('submit', controlladati);
 

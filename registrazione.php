@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="registazione.css">
+    <link rel="stylesheet" href="registrazione.css">
     <script src="registrazione.js" defer></script>
     <title>Registrazione Utente</title>
 </head>
 <body>
-    <form action='iscrizione.php' method='post' name='form_login'>
+    <form action='iscrizione.php' method='post' name='form_reg'>
         
         <div class='hidden errore' id='nome'>Compilare il campo nome correttamente</div><label>Nome <input type='text' name = 'nome' id='nome'value='Inserire il nome'></label>
         <div class='hidden errore' id='cognome'>Compilare il campo cognome correttamente</div> <label>Cognome <input type='text' name = 'cognome' id='cognome' value='Inserire il cognome'></label>

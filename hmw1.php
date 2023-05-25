@@ -34,7 +34,7 @@ if(!isset($_SESSION['username'])){
          </div> 
     </header>
     <div id = 'Titolo'><h1>World Anime</h1></div>
-    <h2>Benvenuto<?php echo $_SESSION['username'];?>!</h2>
+    <h2>Benvenuto <?php echo $_SESSION['username'];?>!</h2>
     <p><a href="logout.php">Effettua il logout</a></p>
 </body>
 </html>
