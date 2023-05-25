@@ -1,13 +1,24 @@
 
 <?php 
+//Utilizzo session_start per avviare la sessione 
+session_start();
+//Controllare l'accesso 
+if(isset($_SESSION['username'])){
+//Mi collego alla home tramite header
+header('Location: hmw1.php');
+exit;
+}
   //Verichiamo se i dati del post sono inizializzati
   if (isset($_POST['username']) && isset($_POST['password'])){
-  //Verificare se le credenziali sono esatte
+    //Verificare se le credenziali sono esatte
     if($_POST['username'] === 'admin' && $_POST['password'] === 'user1'){
-        //mi collego alla homepage
-     header('Location: hmw1.php');
-     //chiude lo script
-     exit;
+
+    //Imposto la variabile di sessione 
+    $_SESSION['username'] = 'admin';    
+    //mi collego alla homepage
+    header('Location: hmw1.php');
+    //chiude lo script
+    exit;
     }
     else{
         $error = true;

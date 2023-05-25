@@ -1,7 +1,11 @@
 <?php
-/*Verificare che i dati del post siano presenti */
-
-
+//avvio la sessione su logout
+session_start();
+//La elimino
+session_destroy();
+//Reinderizzo al login
+header('Location: accesso.php');
+exit;
 ?>
 <!DOCTYPE html>
 <html lang="it">
@@ -9,10 +13,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Logout</title>
 </head>
 <body>
-    <h1>Benvenuto grazie per la tua iscrizione</h1>
-    <a href="hmw1.php"> Vai alla homepage</a>
+    
 </body>
 </html>

@@ -1,3 +1,14 @@
+<?php
+//Avvio la sessione nella home
+session_start();
+//Controllo se l'utente ha effettuato l'accesso 
+if(!isset($_SESSION['username'])){
+    //Mi reinderizza al login
+    header('Location: accesso.php');
+    exit;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="it">
 <head>
@@ -21,8 +32,9 @@
          <a href="#">Carrello</a>
          <a href="#">Profilo</a>
          </div> 
-
     </header>
     <div id = 'Titolo'><h1>World Anime</h1></div>
+    <h2>Benvenuto<?php echo $_SESSION['username'];?>!</h2>
+    <p><a href="logout.php">Effettua il logout</a></p>
 </body>
 </html>

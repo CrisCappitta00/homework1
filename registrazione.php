@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="login.css">
-    <script src="login.js" defer></script>
-    <title>Document</title>
+    <link rel="stylesheet" href="registazione.css">
+    <script src="registrazione.js" defer></script>
+    <title>Registrazione Utente</title>
 </head>
 <body>
     <form action='iscrizione.php' method='post' name='form_login'>
