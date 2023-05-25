@@ -1,5 +1,5 @@
-
 <?php 
+
 //Utilizzo session_start per avviare la sessione 
 session_start();
 //Controllare l'accesso 
@@ -10,9 +10,18 @@ exit;
 }
   //Verichiamo se i dati del post sono inizializzati
   if (isset($_POST['username']) && isset($_POST['password'])){
-    //Verificare se le credenziali sono esatte
-    if($_POST['username'] === 'admin' && $_POST['password'] === 'user1'){
+    //connessione al database 
+    $conn = mysqli_connect('localhost', 'root', '','homework1') or die(mysqli_connect_error());
+    //creo la query
+    $myquery= "SELECT * FROM utenti AS U WHERE U.Username ='". $_POST['username']."' AND U.Password = '".$_POST['password']."'";
+    //esecuzione query
+    $result = mysqli_query($conn,$myquery);
+    //controllo le righe che mi restituisce result
+    $righe_result = mysqli_num_rows($result);
 
+    //Verificare se le credenziali sono esatte
+    if($righe_result >=1){
+      $_SESSION['result_query'] = mysqli_fetch_assoc($result);
     //Imposto la variabile di sessione 
     $_SESSION['username'] = $_POST['username'];    
     //mi collego alla homepage
@@ -45,6 +54,7 @@ exit;
     if(isset($error)){
         echo "<div class='errore'>Errore riempire i campi correttamente</div>";
     }
+    
     ?>
 </body>
 </html>
