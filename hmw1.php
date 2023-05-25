@@ -3,7 +3,7 @@
 session_start();
 //Controllo se l'utente ha effettuato l'accesso 
 if(!isset($_SESSION['username'])){
-    //Mi reinderizza al login
+    //Mi reinderizza al login se ho effettuato un accesso illecito per esempio arrivo alla home tramite url
     header('Location: accesso.php');
     exit;
 }

@@ -4,7 +4,7 @@ session_start();
 //La elimino
 session_destroy();
 //Reinderizzo al login
-header('Location: accesso.php');
+header('Location: index.php');
 exit;
 ?>
 <!DOCTYPE html>

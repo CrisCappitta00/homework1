@@ -14,7 +14,7 @@ exit;
     if($_POST['username'] === 'admin' && $_POST['password'] === 'user1'){
 
     //Imposto la variabile di sessione 
-    $_SESSION['username'] = 'admin';    
+    $_SESSION['username'] = $_POST['username'];    
     //mi collego alla homepage
     header('Location: hmw1.php');
     //chiude lo script
