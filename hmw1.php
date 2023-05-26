@@ -15,26 +15,40 @@ if(!isset($_SESSION['username'])){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homework1</title>
+    <script src="menu.js" defer></script>
+    
     <link rel="stylesheet" type="text/css" href="hmw1.css">
 </head>
 <body>
     <!--Creazione Menù nella parte superiore-->
     <header>
         <img src="Logo.png" alt="logo del sito">
-        
-         <div class='menu'>
-         <a href="#">Home</a>
+        <div id="primafoto" class="bottonecomparsa"></div>
+        <div>
+         <!--<a href="#">Home</a>
          <a href="#">Blog</a>
          <a href="#">Contatti</a>
          <a href="#">Avvisi</a>
          <a href="#">Categoria</a>
          <a href="#">Preferiti</a>
          <a href="#">Carrello</a>
-         <a href="#">Profilo</a>
-         </div> 
+         <a href="#">Profilo</a>-->
+        </div> 
     </header>
+
+
+
     <div id = 'Titolo'><h1>World Anime</h1></div>
     <h2>Benvenuto <?php echo $_SESSION['username'];?>!</h2>
+    <div id='Presentazione'>
+        <p>Caro utente in questo sito potrai trovare tutto ciò che riguarda il mondo degli anime,<br>
+         manga, film anime, novel e se vuoi puoi salvarli nei preferiti dividendoli in gruppi<br>
+         oppure aggiungerli al carrello per poterli comprare.
+        <br>
+        Il sito è diviso in diverse sezioni, adesso ti trovi nella Home,<br>
+        ma puoi trovare anche la sezione Blog in cui vi potrai esprimere diverse opinioni.
+        </p>
+    </div>
     <p><a href="logout.php">Effettua il logout</a></p>
     
 </body>

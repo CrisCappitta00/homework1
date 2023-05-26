@@ -19,3 +19,14 @@ for (const iter of inputs) {
     }
 }
 }
+
+fetch('http://localhost/homework1/boh.php').then(onResponse).then(onText);
+function onResponse(messagge){
+    if (messagge.ok){
+        return messagge.text();
+    }
+}
+
+function onText(text){
+    console.log(text);
+}

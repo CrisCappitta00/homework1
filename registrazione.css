@@ -1,3 +1,12 @@
+body{
+    background-color:azure;
+    margin: 8px;
+    border: 2px skyblue ridge;
+    padding: 10px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+    font-style: italic;
+}
 form{
     display: flex;
     flex-direction: column;
@@ -16,6 +25,5 @@ input{
     display: none;
 }
 .errore{
-    color:blue;
-    
+    color:blue;  
 }

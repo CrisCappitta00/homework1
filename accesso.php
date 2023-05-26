@@ -1,5 +1,4 @@
 <?php 
-
 //Utilizzo session_start per avviare la sessione 
 session_start();
 //Controllare l'accesso 
@@ -12,6 +11,10 @@ exit;
   if (isset($_POST['username']) && isset($_POST['password'])){
     //connessione al database 
     $conn = mysqli_connect('localhost', 'root', '','homework1') or die(mysqli_connect_error());
+    //eseguo un escape, riceve una stringa ed effettua l'escape dei caratteri 
+    //lo usiamo per evitare che per esempio un hacker entri in un database inserendo un "or""=" nella casella dell'username o della password
+    $_POST['username'] = mysqli_real_escape_string($conn,$_POST['username']);
+    $_POST['password'] = mysqli_real_escape_string($conn,$_POST['password']);
     //creo la query
     $myquery= "SELECT * FROM utenti AS U WHERE U.Username ='". $_POST['username']."' AND U.Password = '".$_POST['password']."'";
     //esecuzione query
@@ -42,11 +45,12 @@ exit;
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="accesso.css">
+    <script src="accesso.js" defer></script>
     <title>Accesso</title>
 </head>
 <body>
     <form method="post" name="form_access">
-     <label>Username <input type='text' name = 'username' id='nomeutente' value='Inserire il tuo username'></label>
+     <label>Username <input type='text' name = 'username' id='nomeutente' placeholder='Inserire il tuo username'></label>
      <label>Password <input type='password' name= 'password' id='password'></label>
      <input type='submit' name='invio' value='Invia'>
     </form>

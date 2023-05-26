@@ -1,25 +1,47 @@
 body{
-    background-color: cornflowerblue;
-    margin: 8px;
+    background-color: azure;
     border: 2px solid;
-    padding: 10px;
-    font-family: 'Times New Roman', Times, serif;
+    border-top-color: aquamarine;
+    border-left-color: aqua;
+    border-right-color:cornflowerblue;
+    border-bottom-color:cadetblue;
     color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
     font-style: oblique;
+    margin: 8px;
+    padding: 10px;
+
 }
+
 header{
-    display: flex;
     align-items: flex-start;
-    justify-content: flex-start;
+    display: flex;
     flex-direction: row;
-    position: relative;
     height: 100%;
+    justify-content: flex-start;
     max-width: 100%;
+    position: relative;
+    
+    
 }
 img{
-    max-width: 100%;
-    height: auto;
+    width: calc(10.8vh + 8.5vw);  
 }
+.bottonecomparsa{
+    background: url(burger-menu.png);
+    }
+    .bottonescomparsa{
+    background: url(menu-burger.png);
+    }
 #Titolo{
+    font-family: sans-serif;
     text-align: center;
+    text-transform: uppercase; 
+}
+.menu{
+    align-items: center;
+    color: black;
+    display: flex;
+    
 }
