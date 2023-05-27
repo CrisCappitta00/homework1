@@ -7,12 +7,23 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel="stylesheet" href="iscrizione.css">
     <title>Document</title>
 </head>
 <body>
-    <h1>Benvenuto grazie per la tua iscrizione</h1>
-    <a href="hmw1.php"> Vai alla homepage</a>
+   
+    <header>
+     <p>
+      Grazie per aver scelto<br>di far parte della nostra community!!!
+     </p>
+     <img id="Nezuko" src="BackgroundNezuko.jpeg" alt="Nezuko image">
+     <div>
+     <img id="logo"src="MyLogo.png" alt="Raffigurazione logo personale">
+     </div>
+     <a href="hmw1.php">Vai alla homepage</a>
+    </header>
+    
+    
 </body>
 </html>

@@ -1,0 +1,55 @@
+body{
+    background-image: url(BackgroundNezuko-photoaidcom-blur.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 10px;
+    border: 4px;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+div{
+    display: flex;
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 0%;
+    left: 8%;
+}
+#logo{
+    border-radius: 50%;
+    background-size: cover;
+    width: 30%;
+    height: 40%;
+}
+#Nezuko{
+    max-width: 85%;
+    height: 100%;
+}
+p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: calc(2.5vh+ 3.5vw);
+    text-shadow: rgb(255, 80, 54) 1px 0 10px;/*Aggiungo l'ombra al testo*/
+    color:aliceblue;
+    position: absolute;
+    top: 18%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+}
+a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: calc(1.5vh+ 1.5vw);
+    text-shadow: rgb(255, 80, 54) 1px 0 10px;/*Aggiungo l'ombra al testo*/
+    text-align: center;
+    color: beige; 
+    position: absolute;
+    top: 24%;
+    left: 52.5%;
+    transform: translate(-50%, -50%);
+}

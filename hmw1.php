@@ -16,14 +16,15 @@ if(!isset($_SESSION['username'])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homework1</title>
     <script src="menu.js" defer></script>
-    
     <link rel="stylesheet" type="text/css" href="hmw1.css">
 </head>
 <body>
     <!--Creazione Menù nella parte superiore-->
     <header>
-        <img src="Logo.png" alt="logo del sito">
-        <div id="primafoto" class="bottonecomparsa"></div>
+      
+        <div id="foto">
+            <img src="burger-menu.png" alt="tre rettangoli">
+        </div>
         <div>
          <!--<a href="#">Home</a>
          <a href="#">Blog</a>
