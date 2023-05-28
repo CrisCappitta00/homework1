@@ -42,23 +42,31 @@ exit;
 <html lang="it">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="accesso.css">
     <script src="accesso.js" defer></script>
     <title>Accesso</title>
 </head>
 <body>
-    <form method="post" name="form_access">
-     <input type='text' name = 'username' id='nomeutente' placeholder='USERNAME'>
-     <input type='password' name= 'password' id='password' placeholder='PASSWORD'>
-     <input id='submit' type='submit' name='submit' value='Invia'>
+     <header>
+      <div>
+        <h2>Effettua l'accesso al tuo profilo</h2>
+      </div>
+      <div id="user"><img src="influencer.png" alt=""></div>
+     </header>
+    <form method ='post' name="form_access">
+     
+     <input id='username' type='text' name = 'username' placeholder='USERNAME'>
+     <input id='password' type='password' name= 'password'  placeholder='PASSWORD'>
+     <input id="submit" type="submit" name='submit' value="Invia!">
+     
     </form>
-    <?php
+    <?php 
     if(isset($error)){
-        echo "<div class='errore'>Errore riempire i campi correttamente</div>";
+      echo "<div id='error' class='hidden'>Errore riempire i campi correttamente</div>";
     }
     
-    ?>
+?>
+    
 </body>
 </html>
