@@ -50,9 +50,9 @@ exit;
 </head>
 <body>
     <form method="post" name="form_access">
-     <label>Username <input type='text' name = 'username' id='nomeutente' placeholder='Inserire il tuo username'></label>
-     <label>Password <input type='password' name= 'password' id='password'></label>
-     <input type='submit' name='invio' value='Invia'>
+     <input type='text' name = 'username' id='nomeutente' placeholder='USERNAME'>
+     <input type='password' name= 'password' id='password' placeholder='PASSWORD'>
+     <input id='submit' type='submit' name='submit' value='Invia'>
     </form>
     <?php
     if(isset($error)){

@@ -2,7 +2,7 @@
 const form_acc = document.forms['form_access'];
 console.log(form_acc);
 /*Creo un event listener che partirà ogni qualvolta si preme invio e i campi non sono stati riempiti e richiamerà la funzione controlla dati*/
-form_acc.addEventListener('submit', controllo);
+form_acc.addEventListener('#submit', controllo);
 
 function controllo(event) {
     /*salvo i diversi input del mio form all'interno di inputs e successivamente lo itero*/
