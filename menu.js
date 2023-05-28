@@ -4,5 +4,7 @@ const menubutton = document.getElementById('foto');
 menubutton.addEventListener('click', clickOnTestButton);
 //definisco la funzione clickOnTestButton
 function clickOnTestButton(event){
+
     console.log('è stato effettuato il click');
+    event.preventDefault();
 }

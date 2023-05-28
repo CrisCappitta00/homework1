@@ -24,17 +24,18 @@ if(!isset($_SESSION['username'])){
       
         <div id="foto">
             <img src="burger-menu.png" alt="tre rettangoli">
+            <div id="opzioni">
+             <a href="#">Home</a>
+             <a href="#">Blog</a>
+             <a href="#">Contatti</a>
+             <a href="#">Avvisi</a>
+             <a href="#">Categoria</a>
+             <a href="#">Preferiti</a>
+             <a href="#">Carrello</a>
+             <a href="#">Profilo</a>
+           </div>
         </div>
-        <div>
-         <!--<a href="#">Home</a>
-         <a href="#">Blog</a>
-         <a href="#">Contatti</a>
-         <a href="#">Avvisi</a>
-         <a href="#">Categoria</a>
-         <a href="#">Preferiti</a>
-         <a href="#">Carrello</a>
-         <a href="#">Profilo</a>-->
-        </div> 
+         
     </header>
 
 

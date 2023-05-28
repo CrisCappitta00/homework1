@@ -1,29 +1,210 @@
-body{
-    background-color:azure;
-    margin: 8px;
-    border: 2px skyblue ridge;
-    padding: 10px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: black;
-    font-style: italic;
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: rgba(0, 94, 255, 0.601);
+  font-size: 0.875em;
 }
-form{
-    display: flex;
-    flex-direction: column;
+
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+  color: #50e8ff;
 }
-label {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 5px 0 5px 0;
-    width: calc(10vh + 20vw);
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: rgba(0, 94, 255, 0.601);
+  font-size: 0.875em;
 }
-input{
-    margin: 0.5em;
+
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
+  color: rgba(0, 94, 255, 0.601);
+}
+
+input::placeholder, textarea::placeholder {
+  color: #50e8ff;
+  font-size: 0.875em;
+}
+
+input:focus::placeholder, textarea::focus:placeholder {
+  color: rgba(0, 94, 255, 0.601);
+}
+
+input::-ms-placeholder, textarea::-ms-placeholder {
+  color: #50e8ff;
+  font-size: 0.875em;
+}
+
+input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
+  color: rgba(0, 94, 255, 0.601);
+}
+
+/* on hover placeholder */
+
+input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
+  color: #dddbe2;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-webkit-input-placeholder, textarea:hover:focus::-webkit-input-placeholder {
+  color: #c79cff;
+}
+
+input:hover::-moz-placeholder, textarea:hover::-moz-placeholder {
+  color: #000000ed;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder {
+  color: #c79cff;
+}
+
+input:hover::placeholder, textarea:hover::placeholder {
+  color:#000000ed;
+  font-size: 0.875em;
+}
+
+input:hover:focus::placeholder, textarea:hover:focus::placeholder {
+  color: #c79cff;
+}
+
+input:hover::placeholder, textarea:hover::placeholder {
+  color: #000000ed;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
+  color: #c79cff;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-image: url(Backgroundiscrizione.jpg);
+  color: #ffffff;
+}
+
+header {
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+  position: relative;
+  margin: 100px 0 100px 0;
+  border:rgba(0, 208, 255, 0.314) 3px;
+  font-size: calc(1.2vh + 1.5vw);
+  letter-spacing: 7px;
+  padding: 4px;  
+}
+header div{
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 10px;
+  padding: 20px;
+}
+header div h2{
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  width: 50%;
+}
+
+#utente{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  text-align: center;
+}
+#utente img{
+  width: calc(5.5vh + 5.5vw);
+}
+#form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 500px;
+  margin: 50px auto 100px auto;
+  background-color: rgba(49, 124, 245, 0.446);
+}
+
+input {
+  font-family: 'Lato', sans-serif;
+  font-size: calc(1.5vh + 0.10vw);
+  width: 468px;
+  height: 50px;
+  padding: 0px 15px 0px 15px;
+  
+  background: transparent;
+  outline: none;
+  color: #0d00ffce;
+  
+  border: solid 1px #b3aca7;
+  border-bottom: none;
+  
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+input:hover {
+  background: #0d00ffb2;
+  color: #e2dedb;
+}
+
+textarea {
+  width: 468px;
+  max-width: 468px;
+  height: 110px;
+  max-height: 110px;
+  padding: 15px;
+  
+  background: transparent;
+  outline: none;
+  
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  
+  border: solid 1px #b3aca7;
+  
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+textarea:hover {
+  background: #b3aca7;
+  color: #e2dedb;
+}
+
+#submit {
+  width: 502px;
+  height: 50px;
+  padding: 0px 15px 0px 15px;
+  margin: -6px 0px 0px 0px;
+  
+  font-family: 'Lato', sans-serif;
+  font-size: calc(1.5vh + 0.10vw);
+  color:  #50e8ff;
+  
+  outline:none;
+  cursor: pointer;
+  
+  border: solid 1px #b3aca7;
+  
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+#submit:hover {
+  color: black;
 }
 .hidden{
-    display: none;
+  display: none;
 }
 .errore{
-    color:blue;  
+  font-size: 0.875em;
+  color:white;  
+  outline:none;
+  text-align: center;
+  align-items: center;
 }

@@ -23,7 +23,9 @@ header{
     max-width: 100%;
     position: relative;  
 }
-
+#opzioni{
+    display: none;
+}
 #foto{
     position: relative;
     left: 95%;

@@ -9,7 +9,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link  rel="stylesheet" href="iscrizione.css">
-    <title>Document</title>
+    <title>Iscrizione effettuata</title>
 </head>
 <body>
    
@@ -21,7 +21,7 @@
      <div>
      <img id="logo"src="MyLogo.png" alt="Raffigurazione logo personale">
      </div>
-     <a href="hmw1.php">Vai alla homepage</a>
+     <a href="hmw1.php">Accedi alla homepage</a>
     </header>
     
     
