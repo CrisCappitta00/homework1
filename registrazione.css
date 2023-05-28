@@ -175,11 +175,13 @@ textarea:hover {
 }
 
 #submit {
-  width: 502px;
-  height: 50px;
+  width: 501.5px;
+  height: 45px;
+  bottom: -45px;
+  position:absolute;
   padding: 0px 15px 0px 15px;
   margin: -6px 0px 0px 0px;
-  
+  background-color: rgba(49, 124, 245, 0.446);
   font-family: 'Lato', sans-serif;
   font-size: calc(1.5vh + 0.10vw);
   color:  #50e8ff;
@@ -196,6 +198,7 @@ textarea:hover {
 }
 
 #submit:hover {
+  background: #0d00ffb2;
   color: black;
 }
 .hidden{
