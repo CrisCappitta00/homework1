@@ -51,8 +51,9 @@ if(!isset($_SESSION['username'])){
     <h2>Benvenuto <?php echo $_SESSION['username'];?>!</h2>
     <div id='Presentazione'>
         <p>Caro utente in questo sito potrai trovare tutto ciò che riguarda il mondo degli anime,<br>
-         manga, film anime, novel e se vuoi puoi salvarli nei preferiti dividendoli in gruppi<br>
-         oppure aggiungerli al carrello per poterli comprare.
+         dei manga, dei film anime, delle novel e se vuoi puoi salvarli nei preferiti<br> oppure...<br>
+         puoi aggiungere alla tua WatchList gli anime <br>
+         e alla tua Reading List i manga e le novel
         <br>
         Il sito è diviso in diverse sezioni, adesso ti trovi nella Home,<br>
         ma puoi trovare anche la sezione Blog in cui vi potrai esprimere diverse opinioni.
@@ -65,7 +66,7 @@ if(!isset($_SESSION['username'])){
             <li class="nav"><a href="#">Torna alla home</a></li>
             <li class="nav">Notizie</li>
             <li class="nav">Pubblicità</li>
-            <li class="nav">Privacy</li>
+            <li class="nav">Termini e condizioni</li>
          </ul>
         </div> 
     </footer>
