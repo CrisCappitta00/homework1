@@ -77,6 +77,8 @@ input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
 body {
   font-family: 'Lato', sans-serif;
   background-image: url(Backgroundiscrizione.jpg);
+  height: 100%;
+  width: 90%;
   color: #ffffff;
 }
 
@@ -132,7 +134,7 @@ input {
   
   background: transparent;
   outline: none;
-  color: #0d00ffce;
+  color: black;
   
   border: solid 1px #b3aca7;
   border-bottom: none;
@@ -211,4 +213,11 @@ textarea:hover {
   outline:none;
   text-align: center;
   align-items: center;
+}
+#error{
+    font-size: 1.250em;
+    color:black;  
+    outline:none;
+    text-align: center;
+    align-items: center;
 }

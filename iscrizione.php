@@ -15,13 +15,13 @@
    
     <header>
      <p>
-      Grazie per aver scelto<br>di far parte della nostra community!!!
+      Ciao sono Nezuko grazie per aver scelto<br>di far parte della nostra community!!!
      </p>
      <img id="Nezuko" src="BackgroundNezuko.jpeg" alt="Nezuko image">
      <div>
      <img id="logo"src="MyLogo.png" alt="Raffigurazione logo personale">
      </div>
-     <a href="hmw1.php">Accedi alla homepage</a>
+     <a href="home.php">Accedi alla homepage</a>
     </header>
     
     

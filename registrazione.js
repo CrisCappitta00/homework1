@@ -19,4 +19,5 @@ for (const iterator of inputs) {
         event.preventDefault();
     }
 }
+
 }

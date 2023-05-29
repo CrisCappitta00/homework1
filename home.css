@@ -1,0 +1,124 @@
+body{
+    background-color: blanchedalmond;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    font-style: oblique;
+    margin: 0;
+}
+header{
+    background-color: white;
+    height: 155px;
+}
+.container{
+display: flex;
+flex-wrap: wrap;
+justify-content: flex-start;
+align-items: center;
+height: 20%;
+}
+#Creator{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4px;
+}
+#Creator img{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+#Creator p{
+    font-size: calc(0.5vh + 0.5vw);
+    margin: 18px;
+}
+.inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-transition: border-color .2s ease-in-out;
+    -moz-transition: border-color .2s ease-in-out;
+    -o-transition: border-color .2s ease-in-out;
+    transition: border-color .2s ease-in-out;
+    padding: 0 37px 0 37px;
+    font-family: Nunito Sans,sans-serif;
+    color: #555;
+}
+.BarraNavigazione{
+    display: flex;
+    color: rgb(51, 135, 218);
+    font-style: oblique;
+    font-size: calc(1.5vh + 0.5vw);
+    padding: 1vw;
+    text-decoration: none;
+    cursor: pointer; 
+    padding: 0 10px 0 10px;
+}
+.BarraNavigazione:hover{
+    background-color: rgba(47, 198, 252, 0.343);
+    color: black;
+    border-radius: 60%;
+    border: solid rgb(37, 94, 141) 2px;
+    transition-duration: 1000ms;
+}
+.BarraNavigazione:not(:hover){
+    transition-duration: 800ms;
+}
+.container-profile{
+    display: flex;
+    height: 105px;
+    justify-content: space-between;
+    position: relative;  
+}
+#profile{
+    display: flex;
+    padding: 4px;
+    size: calc(0.05vh + 0.05vw);;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#profile img{
+    border-radius: 45%; 
+    width: 40%;
+    height: 40%;
+}
+#menu{
+    height: 40%;
+    width: auto;
+    border-radius: 55%;
+}
+@media screen and (max-width: 600px) {
+    #profile{
+        width: 35%;
+    }
+    .container-profile img{
+        box-sizing: border-box;
+        padding: 1px;
+        width: 70%;
+        height: 70%;
+    }
+}
+footer{
+    background-color: white;
+    height: 155px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+}
+footer ul{
+    width: 25%;
+    height: 55%;
+}
+.contieneelementi{
+    display: flex;
+    margin: 5px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#Titolo{
+    font-family: sans-serif;
+    text-align: center;
+    text-transform: uppercase; 
+}

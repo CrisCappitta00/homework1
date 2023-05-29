@@ -1,0 +1,102 @@
+@import url(https://fonts.google.com/specimen/Dancing+Script);
+body{
+    font-family: DancingScript;
+    background-image: url(sfondo.jpg);
+    background-size: auto;
+    box-sizing: border-box;
+    color:black;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+#padrecontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    
+}
+.container1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.container2{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+}
+.container2 h1{
+    font-size: calc(1.2vh + 2.5vw);
+}
+.container2 h4{
+    font-size: calc(1.2vh + 1.5vw);
+}
+#lista{
+    height: 50%;
+}
+#menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    width: 100%;
+}
+.BarraNavigazione{
+    color: rgb(255, 255, 255);
+    font-style: oblique;
+    font-size: calc(1.5vh + 0.5vw);
+    padding: 1vw;
+    text-decoration: none;
+    cursor: pointer; 
+    padding: 0 10px 0 10px;
+}
+.BarraNavigazione:hover{
+    background-color: rgba(255, 106, 106, 0.298);
+    border: solid rgb(238, 83, 0) 2px;
+    border-radius: 60%;
+    transition-duration: 1000ms;
+}
+.BarraNavigazione:not(:hover){
+    transition-duration: 800ms;
+}
+#search-bar{
+    background-color: rgba(255, 108, 64, 0.348);
+    border: solid rgb(238, 83, 0) 2px;
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: black;
+    font-size: 0.875em;
+}
+  
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+    color: black;
+}
+input::-moz-placeholder, textarea::-moz-placeholder {
+    color: black;
+    font-size: 0.875em;
+}
+  
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
+    color: black;
+}
+
+button{
+    background-color: rgba(255, 106, 106, 0.298);
+    border: solid rgb(238, 83, 0) 2px;
+}
+button:hover{
+    background-color: rgba(255, 106, 106, 0.298);
+    border-radius: 60%;
+    border: solid rgb(238, 83, 0) 2px;
+    transition-duration: 1000ms;
+}
+button:not(:hover){
+    transition-duration: 800ms;
+}

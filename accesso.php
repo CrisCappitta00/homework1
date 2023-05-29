@@ -4,7 +4,7 @@ session_start();
 //Controllare l'accesso 
 if(isset($_SESSION['username'])){
 //Mi collego alla home tramite header
-header('Location: hmw1.php');
+header('Location: home.php');
 exit;
 }
   //Verichiamo se i dati del post sono inizializzati
@@ -28,7 +28,7 @@ exit;
     //Imposto la variabile di sessione 
     $_SESSION['username'] = $_POST['username'];    
     //mi collego alla homepage
-    header('Location: hmw1.php');
+    header('Location: home.php');
     //chiude lo script
     exit;
     }

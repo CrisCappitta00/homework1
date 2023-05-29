@@ -1,0 +1,92 @@
+@import url(https://fonts.google.com/specimen/Dancing+Script);
+body{
+    font-family: DancingScript;
+    color: white;
+    background-image: url(book.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+header{
+    height: 160px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+.container h1{
+    font-size: calc(1.2vh + 2.5vw);
+}
+.container h4{
+    font-size: calc(1.2vh + 1.5vw);
+    color: rgba(8, 8, 152, 0.716);
+}
+#lista{
+    height: 50%;
+    color: darkblue;
+}
+#menu{
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+}
+.BarraNavigazione{
+    color: rgb(255, 255, 255);
+    font-style: oblique;
+    font-size: calc(1.5vh + 0.5vw);
+    padding: 1vw;
+    text-decoration: none;
+    cursor: pointer; 
+    padding: 0 10px 0 10px;
+}
+.BarraNavigazione:hover{
+    background-color: rgba(106, 178, 255, 0.298);
+    border-radius: 60%;
+    border: solid rgb(67, 121, 165) 2px;
+    transition-duration: 1000ms;
+}
+.BarraNavigazione:not(:hover){
+    transition-duration: 800ms;
+}
+#search-bar{
+    background-color: rgba(106, 178, 255, 0.298);
+    border: solid rgb(67, 121, 165) 2px;
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: rgba(13, 0, 255, 0.751);
+    font-size: 0.875em;
+}
+  
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+    color: black;
+}
+input::-moz-placeholder, textarea::-moz-placeholder {
+    color: rgba(13, 0, 255, 0.751);
+    font-size: 0.875em;
+}
+  
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
+    color: rgba(13, 0, 255, 0.751);
+}
+
+button{
+    background-color: rgba(106, 178, 255, 0.298);
+    border: solid rgb(67, 121, 165) 2px;
+}
+button:hover{
+    background-color: rgba(106, 178, 255, 0.298);
+    border-radius: 60%;
+    border: solid rgb(67, 121, 165) 2px;
+    transition-duration: 1000ms;
+}
+button:not(:hover){
+    transition-duration: 800ms;
+}
